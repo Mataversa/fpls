@@ -2,27 +2,35 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nic Ciekawego</title>
+    <title>Pobierz plik</title>
     <style>
       body {
-        background-color: black;
+        background: #cccccc;
+        height: 100vh;
+        margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        margin: 0;
       }
-
-      .content {
-        text-align: center;
-        color: white;
-        font-size: 36px;
-        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+      .download-btn {
+        background: #fff;
+        color: #333;
+        border: none;
+        padding: 18px 40px;
+        font-size: 1.2em;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 2px 8px #bbb;
+        transition: background 0.2s, color 0.2s;
+      }
+      .download-btn:hover {
+        background: #f0f0f0;
       }
     </style>
   </head>
   <body>
-    <div class="content">NIC CIEKAWEGO NIE ROBIE</div>
+    <a href="plik.txt" download>
+      <button class="download-btn">Pobierz plik</button>
+    </a>
   </body>
 </html>
